@@ -1,20 +1,19 @@
 # Autor: Antonio Betancourt
 
-# el numero de personas
-total = 10   
+print("Encuesta de ideas de proyecto\n")
 
-nombres = [""] * total
-ideas = [""] * total
+nombres = []
+ideas = []
 
-print("\n--- Encuesta de Ideas de Proyecto ---\n")
+for persona in range(10):
+    print("\n- Persona", persona + 1)
 
-for persona in range(total):
-    nombre = input("Ingrese su nombre y apellido: ")
-    idea = input("Ingrese la idea de proyecto: ")
-    print("\n--- Su nombre e idea han sido registrados ---\n")
-    nombres[persona] = nombre
-    ideas[persona] = idea
+    nombre = input("\nEscribe tu nombre: ")
+    idea = input("Escribe tu idea de proyecto: ")
+    nombres += [nombre]   
+    ideas += [idea]       
 
-print("\n--- Nombres e Ideas registradas ---\n")
-for persona in range(total):
-    print("Nombre:", nombres[persona], "   |   Idea:", ideas[persona], "\n")
+print("\n--- Resultados de la encuesta ---")
+for persona in range(10):
+    print("\n", persona + 1, ". Nombre: ", nombres[persona], " |  Idea: ", ideas[persona])
+
