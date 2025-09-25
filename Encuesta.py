@@ -11,7 +11,7 @@ for persona in range(10):
     nombre = input("\nEscribe tu nombre: ")
     idea = input("Escribe tu idea de proyecto: ")
     nombres += [nombre]   
-    ideas += [idea]       
+    ideas += [idea]     #Se guardan en la lista vacia arriba
 
 print("\n--- Resultados de la encuesta ---")
 for persona in range(10):
