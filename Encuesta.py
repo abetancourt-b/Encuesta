@@ -1,6 +1,6 @@
 # Autor: Antonio Betancourt
 
-print("Encuesta de ideas de proyecto\n")
+print("Encuesta de ideas de proyecto")
 
 nombres = []
 ideas = []
